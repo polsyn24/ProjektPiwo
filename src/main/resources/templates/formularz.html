@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Dodaj piwo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="form.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="jquery-ui.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="jquery-ui.min.js"></script>
+
+
+</head>
+
+<body>
+    <div class="col-md-offset-3 col-md-6">
+        <form role="form">
+            <div class="form-group">
+                <label for="nrWarki" class="col-md-2">
+                    Nr warki:
+                </label>
+                <div class="col-md-10">
+                    <input type="number" min="1" max="100" class="form-control" id="imie" placeholder="Wprowadź nr warki">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="nazwaWarki" class="col-md-2">
+                    Nazwa warki:
+                </label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" id="nazwisko" placeholder="Wprowadź nazwę warki">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="Data" class="col-md-2">
+                    Data warzenia:
+                </label>
+                <div class="col-md-10">
+                    <input type="date" class="form-control" id="datepicker" placeholder="Wprowadź datę warzenia">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="nazwisko" class="col-md-2">
+                    Wprowadź słody:
+                </label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" id="nazwisko" placeholder="Nazwa słodu">
+                </div>
+            </div>
+
+    </div>
+
+    <!--        
+          <div class="form-group">
+            <label for="miejscowosc" class="col-md-2">
+              Miejscowość:
+            </label>
+            <div class="col-md-10">
+              <select name="miejscowosc" id="miejscowosc" class="form-control">
+                <option></option>
+                <option>Polska</option>
+                <option>USA</option>
+              </select>
+            </div>
+          </div> -->
+
+    <div class="form-group">
+        <label for="zdjecie" class="col-md-2">
+            Wyślij zdjęcie:
+        </label>
+        <div class="col-md-10">
+            <input type="file" name="zdjecie" id="zdjecie">
+            <p class="help-block">
+                Dozwolone formaty: jpeg, jpg, gif, png
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-offset-2 col-md-10">
+            <button type="submit" class="btn btn-info">
+                Zarejestruj
+            </button>
+        </div>
+    </div>
+    </form>
+    </div>
+    </div>
+</body>
+
+</html>
